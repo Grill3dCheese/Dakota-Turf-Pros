@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 app.use(indexRoute);
-app.use(contactRoute);
+// app.use(contactRoute);
 
 app.listen(process.env.PORT || 3000, process.env.IP, () => {
   console.log("*Server has started successfully*");
