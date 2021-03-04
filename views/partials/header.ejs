@@ -44,8 +44,14 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg pt-lg-0 navbar-light bg-light">
+    <nav id="mainNav" class="navbar navbar-expand-lg pt-lg-0">
       <div class="container">
+        <a href="#page-top" class="navbar-brand d-lg-none">
+          <img
+            src="/assets/img/dtpLogo-mobile.png"
+            alt="Dakota Turf Pros Logo - Lawn Care and Snow Removal in Sioux Falls, South Dakota"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,36 +61,40 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <div class="wrapper-menu">
+            <div class="line-menu half start"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu half end"></div>
+          </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="row align-items-center justify-content-center mx-auto">
             <div class="col-4">
               <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                   <a class="nav-link" href="#">Services</a>
                 </li>
               </ul>
             </div>
             <div class="col-3">
-              <a class="navbar-brand" href="#page-top">
+              <a class="navbar-brand d-none d-lg-block" href="#page-top">
                 <img
-                  src="/assets/img/dtpLogo.png"
+                  src="/assets/img/dtpLogo-desktop.png"
                   alt="Dakota Turf Pros Logo - Lawn Care and Snow Removal in Sioux Falls, South Dakota"
                 />
               </a>
             </div>
             <div class="col-4">
               <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                   <a class="nav-link" href="#">Facebook</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                   <a class="nav-link" href="#">BUTTON</a>
                 </li>
               </ul>
