@@ -1,4 +1,51 @@
+const navbarToggler = document.querySelector(".navbar-toggler");
 const wrapperMenu = document.querySelector(".wrapper-menu");
+const mobileLogo = document.querySelector(".mobile-logo");
+const desktopLogo = document.querySelector(".desktop-logo");
+const navItems = document.querySelectorAll(".nav-item");
+
+navbarToggler.addEventListener("click", function () {
+  wrapperMenu.classList.toggle("open");
+});
+
+document.querySelectorAll(".nav-link").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    wrapperMenu.classList.toggle("open");
+  });
+});
+
+window.onscroll = function () {
+  mobileScroll();
+  desktopScroll();
+};
+
+function mobileScroll() {
+  if (
+    (window.screen.width < 992 && document.body.scrollTop > 80) ||
+    document.documentElement.scrollTop > 80
+  ) {
+    mobileLogo.style.height = "80px";
+  } else {
+    mobileLogo.style.height = "108px";
+  }
+}
+
+function desktopScroll() {
+  if (
+    window.screen.width >= 820 &&
+    (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+  ) {
+    [...navItems].forEach((navItem) => {
+      navItem.classList.add("nav-item-scrolled");
+    });
+    desktopLogo.style.height = "117px";
+  } else {
+    desktopLogo.style.height = "157px";
+    [...navItems].forEach((navItem) => {
+      navItem.classList.remove("nav-item-scrolled");
+    });
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   var lazyloadImages;
@@ -48,14 +95,4 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
   }
-});
-
-wrapperMenu.addEventListener("click", function () {
-  wrapperMenu.classList.toggle("open");
-});
-
-document.querySelectorAll(".nav-link").forEach((item) => {
-  item.addEventListener("click", (event) => {
-    wrapperMenu.classList.toggle("open");
-  });
 });
