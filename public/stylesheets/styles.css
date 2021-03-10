@@ -184,25 +184,64 @@ nav img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  padding: 5em;
 }
 
 .hero-text {
   text-align: center;
-  position: absolute;
   width: 90%;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #ffffff;
+  padding-top: 20%;
 }
 
 .hero-text h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   letter-spacing: 0.075em;
-  line-height: 2em;
+  line-height: 1.5em;
+  padding: 10px;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.green-gradient {
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
 @media only screen and (max-width: 767px) {
@@ -211,6 +250,23 @@ nav img {
   }
   .phoneNum {
     font-size: 1.3em;
+  }
+
+  .hero-text {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text {
+    text-align: center;
+    width: 60%;
+    color: #ffffff;
+    margin-left: 35%;
+  }
+
+  .hero-text h1 {
+    padding: 2em;
   }
 }
 
@@ -226,21 +282,26 @@ nav img {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-text {
+    padding-top: 12%;
+  }
+}
+
 @media only screen and (min-width: 1950px) {
   .hero-text h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     text-transform: uppercase;
     letter-spacing: 0.075em;
     line-height: 1.5em;
+    padding: 20px;
   }
 
   .hero-text {
     text-align: center;
-    position: absolute;
     width: 50%;
-    top: 35%;
-    left: 70%;
-    transform: translate(-50%, -50%);
     color: #ffffff;
+    margin-left: 45%;
+    padding-top: 2%;
   }
 }
