@@ -60,6 +60,7 @@ nav img {
 .navbar-brand {
   transition: all 0.8s;
   padding: 0;
+  margin: 0;
 }
 
 .mobile-logo {
@@ -190,7 +191,7 @@ nav img {
   text-align: center;
   width: 90%;
   color: #ffffff;
-  padding-top: 20%;
+  padding: 25% 0 10% 0;
 }
 
 .hero-text h1 {
@@ -214,7 +215,7 @@ nav img {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 20px;
   height: 55px;
   text-align:center;
   border: none;
@@ -244,6 +245,15 @@ nav img {
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
+/* Get Quote Bar */
+
+#request-quote {
+  background-color: #f6faef;
+  padding: 50px 0;
+}
+
+/*  */
+
 @media only screen and (max-width: 767px) {
   i.bi-telephone-fill {
     font-size: 1.3em;
@@ -260,9 +270,8 @@ nav img {
 @media only screen and (min-width: 768px) {
     .hero-text {
     text-align: center;
-    width: 60%;
     color: #ffffff;
-    margin-left: 35%;
+    width: 60%;
   }
 
   .hero-text h1 {
@@ -284,7 +293,7 @@ nav img {
 
 @media only screen and (min-width: 1024px) {
   .hero-text {
-    padding-top: 12%;
+    padding-top: 10%;
   }
 }
 
@@ -301,7 +310,6 @@ nav img {
     text-align: center;
     width: 50%;
     color: #ffffff;
-    margin-left: 45%;
     padding-top: 2%;
   }
 }
