@@ -191,7 +191,7 @@ nav img {
   text-align: center;
   width: 90%;
   color: #ffffff;
-  padding: 25% 0 10% 0;
+  padding: 35% 0 10% 0;
 }
 
 .hero-text h1 {
@@ -252,7 +252,11 @@ nav img {
   padding: 50px 0;
 }
 
-/*  */
+/* About Us */
+
+#about-us {
+  padding: 50px 0;
+}
 
 @media only screen and (max-width: 767px) {
   i.bi-telephone-fill {
