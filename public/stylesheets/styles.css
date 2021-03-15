@@ -200,7 +200,7 @@ nav img {
   text-align: center;
   width: 90%;
   color: #ffffff;
-  padding: 35% 0 10% 0;
+  padding: 35% 0 15% 0;
 }
 
 .hero-text h1 {
@@ -224,7 +224,6 @@ nav img {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px;
   height: 55px;
   text-align: center;
   border: none;
@@ -271,6 +270,11 @@ nav img {
 
 #about-us {
   padding: 50px 0;
+}
+
+.quote-box {
+  font-size: 22px;
+  padding: 25px;
 }
 
 @media only screen and (max-width: 767px) {
