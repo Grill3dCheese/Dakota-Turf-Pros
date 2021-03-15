@@ -18,12 +18,21 @@ html {
   font-family: "Fira Sans", sans-serif;
 }
 
+p {
+  font-weight: 300;
+}
+
 .test {
   border: 2px solid red;
 }
 
 a:hover {
   color: #8cc63f;
+}
+
+.icon {
+  width: 80%;
+  height: auto;
 }
 
 /* Info Bar Header (Hours & Location) */
@@ -217,23 +226,23 @@ nav img {
   cursor: pointer;
   margin-top: 20px;
   height: 55px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
 
   border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:focus {
@@ -241,7 +250,13 @@ nav img {
 }
 
 .btn-hover.green-gradient {
-  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
@@ -260,7 +275,7 @@ nav img {
 
 @media only screen and (max-width: 767px) {
   i.bi-telephone-fill {
-    font-size: 1.3em;
+    font-size: 1.15em;
   }
   .phoneNum {
     font-size: 1.3em;
@@ -272,7 +287,7 @@ nav img {
 }
 
 @media only screen and (min-width: 768px) {
-    .hero-text {
+  .hero-text {
     text-align: center;
     color: #ffffff;
     width: 60%;
