@@ -22,6 +22,10 @@ p {
   font-weight: 300;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .test {
   border: 2px solid red;
 }
@@ -276,6 +280,15 @@ nav img {
   font-size: 22px;
   padding: 25px;
 }
+
+/* Services */
+
+#services {
+  background-color: #DFF6E2;
+  padding: 50px 0;
+}
+
+/* Media Queries */
 
 @media only screen and (max-width: 767px) {
   i.bi-telephone-fill {
