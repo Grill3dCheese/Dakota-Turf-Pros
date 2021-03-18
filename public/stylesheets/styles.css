@@ -30,6 +30,10 @@ ul {
   border: 2px solid red;
 }
 
+.test1 {
+  border: 2px solid blue;
+}
+
 a:hover {
   color: #8cc63f;
 }
@@ -286,6 +290,16 @@ nav img {
 #services {
   background-color: #dff6e2;
   padding: 50px 0;
+}
+
+/* Why Us */
+
+#why-us {
+  padding: 50px 0;
+}
+
+.whyUsIcons {
+  width: 15%;
 }
 
 /* Media Queries */
