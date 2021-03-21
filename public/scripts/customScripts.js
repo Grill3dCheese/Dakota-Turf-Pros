@@ -25,8 +25,12 @@ function mobileScroll() {
     document.documentElement.scrollTop > 80
   ) {
     mobileLogo.style.height = "80px";
+    wrapperMenu.style.width = "34px";
+    wrapperMenu.style.height = "32px";
   } else {
-    mobileLogo.style.height = "108px";
+    mobileLogo.style.height = "100px";
+    wrapperMenu.style.width = "44px";
+    wrapperMenu.style.height = "42px";
   }
 }
 
@@ -38,9 +42,9 @@ function desktopScroll() {
     [...navItems].forEach((navItem) => {
       navItem.classList.add("nav-item-scrolled");
     });
-    desktopLogo.style.height = "117px";
+    desktopLogo.style.height = "100px";
   } else {
-    desktopLogo.style.height = "157px";
+    desktopLogo.style.height = "140px";
     [...navItems].forEach((navItem) => {
       navItem.classList.remove("nav-item-scrolled");
     });
