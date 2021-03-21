@@ -1,3 +1,5 @@
+/* 415f1c - green icon color */
+
 body,
 h1,
 h2,
@@ -81,11 +83,11 @@ nav img {
 }
 
 .mobile-logo {
-  height: 108px;
+  height: 100px;
 }
 
 .desktop-logo {
-  height: 157px;
+  height: 140px;
 }
 
 .navbar-toggler {
@@ -99,7 +101,7 @@ nav img {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  transition: transform 330ms ease-out;
+  transition: all 330ms ease-out;
 }
 
 .wrapper-menu.open {
@@ -191,6 +193,66 @@ nav img {
 .nav-link:focus:after {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     opacity 0s 0.2s;
+}
+
+i.bi.bi-facebook {
+  font-size: 44px;
+}
+
+.facebook:hover {
+  color: #1778f2;
+}
+
+.facebook:before,
+.facebook:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #8cc63f;
+}
+
+.navBtn {
+  width: 175px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 10px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navBtn:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navBtn:focus {
+  outline: none;
+}
+
+.navBtn.green-gradient {
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
 /* Hero Image */
@@ -338,6 +400,10 @@ nav img {
     text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 8px;
+  }
+
+  .navBtn {
+    width: 100px;
   }
 }
 
