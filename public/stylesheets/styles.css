@@ -360,8 +360,24 @@ i.bi.bi-facebook {
   padding: 50px 0;
 }
 
+#why-us a {
+  color: #2fa4e7;
+  text-decoration: none;
+}
+
+#why-us a:hover {
+  color: #8cc63f;
+  text-decoration: underline;
+}
+
 .whyUsIcons {
   width: 15%;
+}
+
+/* Reviews */
+
+#reviews {
+  padding: 50px 0;
 }
 
 /* Media Queries */
@@ -383,6 +399,7 @@ i.bi.bi-facebook {
   .hero-text {
     text-align: center;
     color: #ffffff;
+    padding: 15% 0 5% 0;
     width: 60%;
   }
 
@@ -426,6 +443,6 @@ i.bi.bi-facebook {
     text-align: center;
     width: 50%;
     color: #ffffff;
-    padding-top: 2%;
+    padding: 5% 0 2% 0;
   }
 }
