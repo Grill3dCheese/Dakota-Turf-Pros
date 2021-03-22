@@ -3,6 +3,7 @@ const wrapperMenu = document.querySelector(".wrapper-menu");
 const mobileLogo = document.querySelector(".mobile-logo");
 const desktopLogo = document.querySelector(".desktop-logo");
 const navItems = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarSupportedContent");
 
 navbarToggler.addEventListener("click", function () {
   wrapperMenu.classList.toggle("open");
@@ -11,6 +12,15 @@ navbarToggler.addEventListener("click", function () {
 document.querySelectorAll(".nav-link").forEach((item) => {
   item.addEventListener("click", (event) => {
     wrapperMenu.classList.toggle("open");
+  });
+});
+
+// Closes responsive menu when a scroll trigger link is clicked
+
+navItems.forEach((l) => {
+  l.addEventListener("click", () => {
+    const bsCollapse = new bootstrap.Collapse(menuToggle);
+    bsCollapse.toggle();
   });
 });
 
