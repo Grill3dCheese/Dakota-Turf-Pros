@@ -215,6 +215,7 @@ i.bi.bi-facebook {
 }
 
 .navBtn {
+  color: #ffffff;
   width: 175px;
   font-size: 14px;
   font-weight: 600;
@@ -224,8 +225,7 @@ i.bi.bi-facebook {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-
-  border-radius: 10px;
+  border-radius: 50px;
   moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -296,6 +296,7 @@ i.bi.bi-facebook {
   cursor: pointer;
   height: 55px;
   text-align: center;
+  text-decoration: none;
   border: none;
   background-size: 300% 100%;
 
@@ -307,6 +308,7 @@ i.bi.bi-facebook {
 }
 
 .btn-hover:hover {
+  color: #fff;
   background-position: 100% 0;
   moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -426,10 +428,6 @@ i.bi.bi-facebook {
     text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 8px;
-  }
-
-  .navBtn {
-    width: 100px;
   }
 }
 
