@@ -270,7 +270,6 @@ i.bi.bi-facebook {
   text-align: center;
   width: 90%;
   color: #ffffff;
-  padding: 25% 0 15% 0;
 }
 
 .hero-text h1 {
@@ -405,23 +404,19 @@ footer {
   background-color: #dff6e2;
 }
 
+.footer-icons {
+  font-size: 44px;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 375px) {
-  .hero-text {
-    padding: 35% 0 15% 0;
-  }
-
   .hero-text h1 {
     padding: 25px;
   }
 }
 
 @media only screen and (min-width: 414px) {
-  .hero-text {
-    padding: 40% 0 15% 0;
-  }
-
   .hero-text h1 {
     padding: 45px 15px;
   }
@@ -434,17 +429,12 @@ footer {
   .phoneNum {
     font-size: 1.3em;
   }
-
-  .hero-text {
-    margin: auto;
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-text {
     text-align: center;
     color: #ffffff;
-    padding: 15% 0 5% 0;
     width: 60%;
   }
 
@@ -465,10 +455,25 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .hero-text {
-    padding-top: 15%;
-  }
+/* iPad 1, 2, Mini and Air */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .whyUsIcons {
+      width: 25%;
+    }
+}
+
+/* Portrait only - iPad 1, 2, Mini and Air */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .whyUsIcons {
+      width: 25%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -490,6 +495,5 @@ footer {
     text-align: center;
     width: 50%;
     color: #ffffff;
-    padding: 12% 0 2% 0;
   }
 }
