@@ -28,16 +28,12 @@ ul {
   list-style-type: none;
 }
 
-.test {
-  border: 2px solid red;
-}
-
-.test1 {
-  border: 2px solid blue;
-}
-
 a:hover {
   color: #8cc63f;
+}
+
+svg {
+  margin-top: -1px;
 }
 
 .icon {
@@ -401,6 +397,12 @@ i.bi.bi-facebook {
 
 .google-review {
   width: 200px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #dff6e2;
 }
 
 /* Media Queries */
