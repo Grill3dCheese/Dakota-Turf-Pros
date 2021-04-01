@@ -61,6 +61,27 @@ function desktopScroll() {
   }
 }
 
+// Customer Reviews Read More Function
+
+function readMore() {
+  let i;
+  let dots = document.querySelectorAll(".dots");
+  let moreText = document.querySelectorAll(".more");
+  let btnText = document.querySelectorAll(".readMoreBtn");
+
+  for (i = 0; i < dots.length; i++) {
+    if (dots[i].style.display === "none") {
+      dots[i].style.display = "inline";
+      btnText[i].innerHTML = "Read More &gt;";
+      moreText[i].style.display = "none";
+    } else {
+      dots[i].style.display = "none";
+      btnText[i].innerHTML = "Read Less";
+      moreText[i].style.display = "inline";
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   var lazyloadImages;
 
