@@ -1,7 +1,7 @@
 const express = require("express"),
   router = express.Router();
 
-// Root Route
+// Contact Route
 router.get("/contact", (req, res) => {
   res.render("contact");
 });
