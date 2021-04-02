@@ -423,6 +423,32 @@ footer {
   text-decoration: none;
 }
 
+/* ++QUOTE PAGE++ */
+
+#quote-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/quote-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.contactBlur {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+
+.btmBorder {
+  padding-top: 5px;
+  margin: auto;
+  border-bottom: 3px solid #dff6e2;
+  width: 97%;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 375px) {
