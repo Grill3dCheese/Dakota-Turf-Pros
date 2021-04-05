@@ -445,7 +445,7 @@ footer {
 .btmBorder {
   padding-top: 5px;
   margin: auto;
-  border-bottom: 3px solid #dff6e2;
+  border-bottom: 1px solid #dff6e2;
   width: 97%;
 }
 
