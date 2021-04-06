@@ -440,10 +440,14 @@ footer {
 }
 
 .contactBlur {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-radius: 20px;
+}
+
+.formTitle {
+  letter-spacing: 8px;
 }
 
 .btmBorder {
@@ -462,6 +466,13 @@ footer {
 .contactLink {
   color: black;
   margin-left: 5px;
+}
+
+.form-label {
+  font-weight: 300;
+}
+
+.form-control {
 }
 
 /* Media Queries */
@@ -491,6 +502,11 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    min-height: auto;
+  }
+
   .hero-text {
     text-align: center;
     color: #ffffff;
