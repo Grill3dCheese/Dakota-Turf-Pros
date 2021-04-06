@@ -20,6 +20,10 @@ html {
   font-family: "Fira Sans", sans-serif;
 }
 
+label {
+  font-weight: 300;
+}
+
 p {
   font-weight: 300;
 }
@@ -447,7 +451,7 @@ footer {
 }
 
 .formTitle {
-  letter-spacing: 8px;
+  letter-spacing: 5px;
 }
 
 .btmBorder {
@@ -464,15 +468,25 @@ footer {
 }
 
 .contactLink {
-  color: black;
+  color: #ffffff;
   margin-left: 5px;
+  text-decoration: none;
 }
 
-.form-label {
-  font-weight: 300;
+.contactLink:hover {
+  text-decoration: underline;
 }
 
 .form-control {
+  padding: 0.85rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.form-select {
+  padding: 0.85rem;
+  border: none;
+  border-radius: 3px;
 }
 
 /* Media Queries */
