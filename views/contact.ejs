@@ -9,7 +9,12 @@
         </div>
         <div class="row mt-5">
           <div class="col-12 col-md-7 mb-5 mb-md-0">
-            <form class="row g-3 ms-md-2">
+            <form
+              action="/contact"
+              method="POST"
+              role="form"
+              class="row g-3 ms-md-2"
+            >
               <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
                 <input
@@ -41,8 +46,12 @@
                 <label for="inputPhone" class="form-label">Phone</label>
                 <input
                   type="tel"
+                  data-attr-format="Phone"
                   class="form-control"
                   id="inputPhone"
+                  placeholder="(___) ___-____"
+                  minlength="10"
+                  maxlength="14"
                   required
                 />
               </div>
