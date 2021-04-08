@@ -59,8 +59,8 @@ router.post("/contact/send", (req, res) => {
 
   // Specify what the email will look like
   const mailOpts = {
-    from: '"CONTACT FORM ✉️" <>',
-    to: "",
+    from: '"CONTACT FORM ✉️" <bob@bob.com>',
+    to: "bob@bob.com",
     replyTo: `${req.body.email}`,
     priority: "high",
     subject: "❗ New Contact Form Submitted",
