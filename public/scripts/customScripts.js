@@ -72,11 +72,11 @@ function readMore() {
   for (i = 0; i < dots.length; i++) {
     if (dots[i].style.display === "none") {
       dots[i].style.display = "inline";
-      btnText[i].innerHTML = "Read More &gt;";
+      btnText[i].innerHTML = "Read More &or;";
       moreText[i].style.display = "none";
     } else {
       dots[i].style.display = "none";
-      btnText[i].innerHTML = "Read Less";
+      btnText[i].innerHTML = "Read Less &and;";
       moreText[i].style.display = "inline";
     }
   }
