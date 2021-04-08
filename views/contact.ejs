@@ -10,7 +10,7 @@
         <div class="row mt-5">
           <div class="col-12 col-md-7 mb-5 mb-md-0">
             <form
-              action="/contact"
+              action="/contact/send"
               method="POST"
               role="form"
               class="row g-3 ms-md-2"
@@ -21,6 +21,7 @@
                   type="text"
                   class="form-control"
                   id="firstName"
+                  name="firstName"
                   required
                 />
               </div>
@@ -30,6 +31,7 @@
                   type="text"
                   class="form-control"
                   id="lastName"
+                  name="lastName"
                   required
                 />
               </div>
@@ -38,7 +40,8 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="inputPhone"
+                  id="email"
+                  name="email"
                   required
                 />
               </div>
@@ -49,6 +52,7 @@
                   data-attr-format="Phone"
                   class="form-control"
                   id="inputPhone"
+                  name="inputPhone"
                   placeholder="(___) ___-____"
                   minlength="10"
                   maxlength="14"
@@ -61,6 +65,7 @@
                   type="text"
                   class="form-control"
                   id="inputAddress"
+                  name="inputAddress"
                   placeholder="1234 Main St"
                   required
                 />
@@ -71,6 +76,7 @@
                   type="text"
                   class="form-control"
                   id="inputAddress2"
+                  name="inputAddress2"
                   placeholder="Apartment, studio, or floor"
                 />
               </div>
@@ -80,12 +86,18 @@
                   type="text"
                   class="form-control"
                   id="inputCity"
+                  name="inputCity"
                   required
                 />
               </div>
               <div class="col-md-4">
                 <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select" required>
+                <select
+                  id="inputState"
+                  name="inputState"
+                  class="form-select"
+                  required
+                >
                   <option value="">Choose Option...</option>
                   <option value="South Dakota">South Dakota</option>
                   <option value="Iowa">Iowa</option>
@@ -99,12 +111,13 @@
                   type="text"
                   class="form-control"
                   id="inputZip"
+                  name="inputZip"
                   required
                 />
               </div>
               <div class="col-12 col-md-6">
                 <label for="gate" class="form-label">Do you have a gate?</label>
-                <select class="form-select" id="gate" required>
+                <select class="form-select" id="gate" name="gate" required>
                   <option value="">Choose Option...</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -114,7 +127,12 @@
                 <label for="sprinklerSelect" class="form-label"
                   >Do you have a sprinkler system?</label
                 >
-                <select class="form-select" id="sprinklerSelect" required>
+                <select
+                  class="form-select"
+                  id="sprinklerSelect"
+                  name="sprinklerSelect"
+                  required
+                >
                   <option value="">Choose Option...</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -124,7 +142,12 @@
                 <p class="fw-bold mt-2">Services Interested In:</p>
                 <p class="mb-3">(Select all that apply)</p>
                 <div class="form-check form-check-inline fs-5">
-                  <input class="form-check-input" type="checkbox" id="mowing" />
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="mowing"
+                    name="mowing"
+                  />
                   <label class="form-check-label" for="mowing"> Mowing </label>
                 </div>
                 <div class="form-check form-check-inline fs-5">
@@ -132,6 +155,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="fertilizing"
+                    name="fertilizing"
                   />
                   <label class="form-check-label" for="fertilizing">
                     Fertilizing
@@ -142,6 +166,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="weedControl"
+                    name="weedControl"
                   />
                   <label class="form-check-label" for="weedControl">
                     Weed Control
@@ -152,13 +177,19 @@
                     class="form-check-input"
                     type="checkbox"
                     id="springFallCleanup"
+                    name="springFallCleanup"
                   />
                   <label class="form-check-label" for="springFallCleanup">
                     Spring/Fall Cleanup
                   </label>
                 </div>
                 <div class="form-check form-check-inline fs-5 mt-md-3">
-                  <input class="form-check-input" type="checkbox" id="edging" />
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="edging"
+                    name="edging"
+                  />
                   <label class="form-check-label" for="edging"> Edging </label>
                 </div>
                 <div class="form-check form-check-inline fs-5">
@@ -166,6 +197,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="aerating"
+                    name="aerating"
                   />
                   <label class="form-check-label" for="aerating">
                     Aerating
@@ -176,6 +208,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="sprinklerSystem"
+                    name="sprinklerSystem"
                   />
                   <label class="form-check-label" for="sprinklerSystem">
                     Sprinkler System
@@ -186,6 +219,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="pestControl"
+                    name="pestControl"
                   />
                   <label class="form-check-label" for="pestControl">
                     Perimeter Pest Control
