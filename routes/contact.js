@@ -52,7 +52,7 @@ router.post("/contact/send", (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.MAILUN,
+      user: process.env.MAIL,
       pass: process.env.MAILEPW,
     },
   });
@@ -83,10 +83,12 @@ Sprinkler System: ${req.body.sprinklerSelect}
   // Attempt to send email
   smtpTrans.sendMail(mailOpts, (error, response) => {
     if (error) {
-      console.log("Failed");
+      console.log("Failed", error);
+      req.flash("error", "There was an issue sending, please try again!");
       res.redirect("back");
     } else {
-      console.log("Success");
+      console.log("Success", response);
+      req.flash("success", "Your message has been sent successfully!");
       res.redirect("back");
     }
   });
