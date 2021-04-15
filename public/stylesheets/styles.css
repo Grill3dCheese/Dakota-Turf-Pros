@@ -464,6 +464,12 @@ footer {
   margin-right: 0.75rem;
 }
 
+.navIndex {
+  z-index: 1265;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .contactBlur {
   background: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(8px);
