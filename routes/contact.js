@@ -47,20 +47,18 @@ router.post("/contact/send", (req, res) => {
   </ul>
   `;
   // Instantiate the SMTP server
-  const smtpTrans = nodemailer.createTransport({
-    host: process.env.MAILHOST,
-    port: 465,
-    secure: true,
+  let transporter = nodemailer.createTransport({
+    service: "Outlook365",
     auth: {
-      user: process.env.MAIL,
+      user: process.env.MAILUN,
       pass: process.env.MAILEPW,
     },
   });
 
   // Specify what the email will look like
   const mailOpts = {
-    from: '"CONTACT FORM ✉️" <bob@bob.com>',
-    to: "bob@bob.com",
+    from: '"CONTACT FORM ✉️" <brandon@dakotaturfpros.com>',
+    to: "brandon@dakotaturfpros.com",
     replyTo: `${req.body.email}`,
     priority: "high",
     subject: "❗ New Contact Form Submitted",
@@ -81,13 +79,11 @@ Sprinkler System: ${req.body.sprinklerSelect}
   };
 
   // Attempt to send email
-  smtpTrans.sendMail(mailOpts, (error, response) => {
+  transporter.sendMail(mailOpts, (error, response) => {
     if (error) {
-      console.log("Failed", error);
       req.flash("error", "There was an issue sending, please try again!");
       res.redirect("back");
     } else {
-      console.log("Success", response);
       req.flash("success", "Your message has been sent successfully!");
       res.redirect("back");
     }
