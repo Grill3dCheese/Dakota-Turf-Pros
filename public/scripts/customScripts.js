@@ -4,6 +4,13 @@ const mobileLogo = document.querySelector(".mobile-logo");
 const desktopLogo = document.querySelector(".desktop-logo");
 const navItems = document.querySelectorAll(".nav-item");
 const menuToggle = document.getElementById("navbarSupportedContent");
+const alertMsg = document.querySelector(".alert");
+
+if (alertMsg) {
+  window.setTimeout(function () {
+    alertMsg.classList.remove("show");
+  }, 3000);
+}
 
 navbarToggler.addEventListener("click", function () {
   wrapperMenu.classList.toggle("open");
