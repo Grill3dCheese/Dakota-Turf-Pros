@@ -5,6 +5,7 @@ const desktopLogo = document.querySelector(".desktop-logo");
 const navItems = document.querySelectorAll(".nav-item");
 const menuToggle = document.getElementById("navbarSupportedContent");
 const alertMsg = document.querySelector(".alert");
+const submitBtn = document.querySelector(".btn");
 
 if (alertMsg) {
   window.setTimeout(function () {
@@ -20,6 +21,24 @@ document.querySelectorAll(".nav-link").forEach((item) => {
   item.addEventListener("click", (event) => {
     wrapperMenu.classList.toggle("open");
   });
+});
+
+submitBtn.addEventListener("click", function () {
+  const validityArray = [
+    firstName.checkValidity(),
+    lastName.checkValidity(),
+    email.checkValidity(),
+    inputPhone.checkValidity(),
+    inputAddress.checkValidity(),
+    inputCity.checkValidity(),
+    inputState.checkValidity(),
+    inputZip.checkValidity(),
+    gate.checkValidity(),
+    sprinklerSelect.checkValidity(),
+  ];
+  if (!validityArray.includes(false)) {
+    this.classList.toggle("button--loading");
+  }
 });
 
 // Closes responsive menu when a scroll trigger link is clicked
