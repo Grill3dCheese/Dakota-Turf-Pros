@@ -72,7 +72,7 @@ function mobileScroll() {
 
 function desktopScroll() {
   if (
-    window.screen.width >= 820 &&
+    window.screen.width >= 992 &&
     (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
   ) {
     [...navItems].forEach((navItem) => {
